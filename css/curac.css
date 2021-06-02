@@ -1,0 +1,51 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+}
+body span{
+    margin: 0px;
+    padding: 10px;
+}
+
+/*form{
+    width: 95%;
+    margin: auto;
+}*/
+form h2{
+    background-color: #004c91;
+    color: white;
+    font-weight: bold;
+}
+form span{
+    width: 200px;
+    display: inline-block;
+}
+form input{
+    width: 25%;
+}
+.form-container{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    background-color: #eef0f7;
+}
+
+form a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 10px;
+    color: white;
+    margin-left: 10px;
+    background-color: #004c91;
+    border-radius: 5px;
+}
+form .sub{
+    display: flex;
+    justify-content: center;
+}

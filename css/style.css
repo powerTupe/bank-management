@@ -1,0 +1,429 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica,arial, sans-serif;
+}
+
+/*-----------------------styling the header---------------*/
+header{
+    border: 1px solid black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    z-index: 997;
+    background-color: white;
+    color: white;
+}
+.header-set1{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 15px auto;
+}
+#img1{
+    width: 190px;
+    height: 45px;
+}
+.header-set2{
+    width: 80%;
+    margin: 10px auto;
+}
+#nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+#nav-links li{
+    list-style: none;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 18px;
+}
+#nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+#nav-links li:hover a{
+    transition: all 0.4s ease;
+    color: #fca700;
+}
+#nav-links li:hover{
+    transition: all 0.4s ease;
+    border-bottom: 1px solid #fca700;
+} 
+#nav-links li:hover ul li{
+    display: block;
+    z-index: 997;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 10px;
+}
+#nav-links li:hover ul{
+    padding: 0px;
+    margin-top: 5px;
+}
+#nav-links li:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+#nav-links li ul li{
+    display: none;
+}
+
+/*----------------------------------styling with main section--------------------*/
+
+.main-section{
+    margin-top: 120px;
+    background-image: url(../images/bg-homepage-banner.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.main-section-1{
+    width: 80%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main-section-1 .section-1{
+    margin: 100px 0px 5px 25px;
+}
+.section-1 .icons-1 img,
+.section-1 .icons-2 img{
+    padding: 10px 20px;
+}
+.section-1 .icons-1 img:hover,
+.section-1 .icons-2 img:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.section-2{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section-2-service-1{
+    display: flex;
+}
+.section-2-service-1 #size1{
+    padding: 12px 100px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 5px;
+}
+.section-2-service-1 #size2{
+    margin-left: 5px;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    background-color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section-2-service-2 img{
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+/*----------------------styling with marquee-------------------*/
+
+marquee{
+    background-color: rgba(0,0,0,0.2);
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 10px;
+    margin: 15px 0px;
+    border-bottom: 2px solid gray;
+}
+
+/*-------------------styling with iframe set-----------------*/
+
+.iframe_set{
+    width: 100%;
+    margin: 15px auto 50px;
+}
+.iframe_set_1{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+.iframe_set_1 h2{
+    color: dodgerblue;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+iframe{
+    width: 100%;
+    height: 200px;
+    border: 0;
+}
+
+/*------------styling with product and services-------------------*/
+
+.product_and_services{
+    width: 100%;
+}
+.p_and_s_main{
+    width: 82%;
+    margin:auto;
+}
+.p_and_s_main h2{
+    display: inline;
+    color: dodgerblue;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-left: 55px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.p_and_s_main span{
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    margin-left: 45px;
+}
+.p_and_s_image{
+    display: flex;
+    justify-content: space-between;
+}
+.slide{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 300px;
+    height: 250px;
+    margin-top: 50px;
+}
+.slide img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 250px;
+    width: 300px;
+    margin-top: -50px;
+}
+.slide_content1,
+.slide_content2,
+.slide_content3,
+.slide_content4
+{   font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    color: dodgerblue;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    animation: 
+}
+.slide:hover .slide_content1,
+.slide:hover .slide_content2,
+.slide:hover .slide_content3,
+.slide:hover .slide_content4{
+    transform: translate(0,0);
+}
+
+.slide-top .slide_content1{
+    transform: translate(100%,-100%);
+}
+.slide-top .slide_content2{
+    transform: translate(100%,0%);
+}
+.slide-top .slide_content3{
+    transform: translate(-100%,0%);
+}
+.slide-top .slide_content4{
+    transform: translate(100%,100%);
+}
+/*.slide-top .slide_content4{
+    transform: translate(-100%,-100%);
+}*/
+
+.colorchg{
+    animation: colorchange 0.5s infinite ease;
+}
+
+    
+/*styling with the connections*/   
+    
+.connection{
+    width: 100%;
+    font-family: cursive;
+    margin-top: 25px;
+}
+.connection-wrap{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.connection-1 h2{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.connection-1:hover img{
+    transition: all 0.4s ease;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.connection-1 h4{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+/*styling with info*/
+.inform{
+    width: 100%;
+    margin-top: 25px;
+}
+.inform-1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+/*styling with footer lets do it*/
+footer{
+    widows: 100%;
+    background-color: #04091e;
+    height: 450px;
+    margin-top: 25px;
+}
+.footer-block{
+    width: 80%;
+    margin: auto;  
+}
+.footer-block-wrap{
+    display: flex;
+    color: white;
+}
+.footer-block-wrap .links{
+    flex: 1;
+    margin-top: 100px;
+}
+.footer-block-wrap .links ul{
+    list-style: none;
+}
+.footer-block-wrap .links ul li{
+    margin-top: 15px;
+}
+.links h4{
+    margin-top: 10px;
+}
+.links input{
+    margin-top: 15px;
+    padding: 5px;
+}
+.links span{
+    padding: 6px;
+    background-color: #fab700;
+    color: white;
+}
+
+/*model section*/
+    
+.model-bg,
+.model-bg1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.model-container{
+    width: 35%;
+    height: 50%;
+    background-color: white;
+    z-index: 997;
+    margin: auto; 
+    position: relative;
+    border-radius: 10px;
+}
+.close,
+.close1{
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    font-size: 44px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+form{
+    width: 50%;
+    margin: 50px auto;
+} 
+form div{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: blue;
+}
+input{
+    width: 100%;
+    margin: 5px auto;
+    padding: 10px 20px;
+}
+form a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,255);
+    color: white;
+    margin-top: 35px;
+}
+
+
+
+/*animations*/
+@keyframes colorchange{
+    0%{
+        color: red;
+    }
+    25%{
+        color: purple;
+        
+    50%{
+        color: white;
+    }
+    75%{
+        color: deepskyblue;
+    }
+    100%{
+        color: white;
+    }
+}
